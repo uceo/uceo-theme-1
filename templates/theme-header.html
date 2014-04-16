@@ -1,0 +1,21 @@
+## mako
+<%namespace name='static' file='/static_content.html'/>
+<%inherit file="/navigation.html"/>
+
+<%block name="navigation_top">
+</%block>
+
+<%block name="navigation_logo">
+  <img src="${static.url('themes/uceo-theme/images/logo.png')}" alt="IONISx" width="145" height="70" />
+</%block>
+
+## When unauthenticated, only show the about page link
+<%block name="navigation_global_links">
+</%block>
+
+## When authenticated, show both the about page and find courses
+<%block name="navigation_global_links_authenticated">
+  <li class="nav-global-02">
+    <a href="${marketing_link('COURSES')}">Nos cours</a>
+  </li>
+</%block>
