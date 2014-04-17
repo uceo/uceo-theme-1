@@ -245,7 +245,8 @@ header.global.slim {
     height: auto;
     padding: 0;
     border: 0 none;
-    background-color: #3ea5ce;
+    /*background-color: #3ea5ce;*/
+    background: url('../images/header-bg.png');
 }
 
 header.global:hover,
