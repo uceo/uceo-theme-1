@@ -191,6 +191,7 @@ ul {
 .view-register .wrapper-footer,
 .view-passwordreset .wrapper-footer,
 .wrapper-footer {
+    background: url(../themes/uceo-theme/images/header-bg.png);
     background-color: #3ea5ce;
     box-shadow: none;
     border: 0 none;
