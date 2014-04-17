@@ -191,8 +191,7 @@ ul {
 .view-register .wrapper-footer,
 .view-passwordreset .wrapper-footer,
 .wrapper-footer {
-    /*background-color: #3ea5ce;*/
-    background: repeat scroll 0 0 url(../themes/uceo-theme/images/header-bg.png);
+    background-color: #3ea5ce;
     box-shadow: none;
     border: 0 none;
 }
@@ -954,11 +953,19 @@ div.info-wrapper section.handouts {
     font-weight: 600;
 }
 
+.xmodule_display.xmodule_HtmlModule h2 {
+    color: #3ea5ce;
+    text-transform: none;
+    font-weight: 600;
+}
+
 
 /* ==========================================================================
    Course forum
    ========================================================================== */
 
+.discussion-module .new-post-btn,
+.discussion-user-threads .new-post-btn,
 body.discussion .course-tabs .right .new-post-btn {
     height: 34px;
     transition: all .1s ease-in;
@@ -972,6 +979,10 @@ body.discussion .course-tabs .right .new-post-btn {
     font-weight: 600;
 }
 
+.discussion-module .new-post-btn:hover,
+.discussion-module .new-post-btn:focus,
+.discussion-user-threads .new-post-btn:hover,
+.discussion-user-threads .new-post-btn:focus,
 body.discussion .course-tabs .right .new-post-btn:hover,
 body.discussion .course-tabs .right .new-post-btn:focus {
     background: none;
@@ -980,6 +991,8 @@ body.discussion .course-tabs .right .new-post-btn:focus {
     color: white;
 }
 
+.discussion-module .new-post-icon,
+.discussion-user-threads .new-post-icon,
 body.discussion .course-tabs .right .new-post-icon {
     color: inherit;
 }
@@ -1547,6 +1560,10 @@ header.global ol.user > li.primary:last-child > a.shopping-cart:hover {
     padding: 0;
     padding-top: 10px;
     position: relative;
+}
+
+.cart-list .cart-table .cart-headings th.total {
+    width: 100px;
 }
 
 .cart-list .cart-table .remove_line_item {
