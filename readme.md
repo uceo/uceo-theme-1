@@ -1,4 +1,4 @@
-# ioc-edx-theme
+# uceo-theme
 
 > This repository contains the Open edX theme used by IONISx.
 
