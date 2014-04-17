@@ -31,6 +31,7 @@
 <body class="{% block bodyclass %}{% endblock %} lang_{{LANGUAGE_CODE}}">
   <a class="nav-skip" href="#content">{% trans "Skip to this view's content" %}</a>
   {% include "theme-header.html" %}
+  {% include "navigation.html" %}
   <section class="content-wrapper" id="content">
     {% block body %}{% endblock %}
     {% block bodyextra %}{% endblock %}

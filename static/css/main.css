@@ -191,7 +191,7 @@ ul {
 .view-register .wrapper-footer,
 .view-passwordreset .wrapper-footer,
 .wrapper-footer {
-    background-color: #000;
+    background: url('../images/header-bg.png');
     box-shadow: none;
     border: 0 none;
 }
@@ -221,12 +221,12 @@ ul {
 .wrapper-footer > footer > p > a,
 .wrapper-footer > footer > p > a:link,
 .wrapper-footer > footer > p > a:visited {
-    color: #fff;
+    color: rgb(0,102,153);
     border: 0 none;
 }
 
 .wrapper-footer > footer > p > a:hover {
-    text-decoration: underline !important;
+    color: #A2C252;
 }
 
 
@@ -245,7 +245,6 @@ header.global.slim {
     height: auto;
     padding: 0;
     border: 0 none;
-    /*background-color: #3ea5ce;*/
     background: url('../images/header-bg.png');
 }
 
