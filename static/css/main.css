@@ -99,6 +99,17 @@ ul {
 
 .content-wrapper .home header,
 .content-wrapper .find-courses header.search {
+    background: #3366cc url('../images/caption-bg.png') left top repeat; /* Old browsers */
+    background: url('../images/caption-bg.png') left top repeat, -moz-radial-gradient(center, ellipse cover,  #3366cc 39%, #333366 100%); /* FF3.6+ */
+    background: url('../images/caption-bg.png') left top repeat, -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(39%,#3366cc), color-stop(100%,#333366)); /* Chrome,Safari4+ */
+    background: url('../images/caption-bg.png') left top repeat, -webkit-radial-gradient(center, ellipse cover,  #3366cc 39%,#333366 100%); /* Chrome10+,Safari5.1+ */
+    background: url('../images/caption-bg.png') left top repeat, -o-radial-gradient(center, ellipse cover,  #3366cc 39%,#333366 100%); /* Opera 12+ */
+    background: url('../images/caption-bg.png') left top repeat, -ms-radial-gradient(center, ellipse cover,  #3366cc 39%,#333366 100%); /* IE10+ */
+    background: url('../images/caption-bg.png') left top repeat, radial-gradient(ellipse at center,  #3366cc 39%,#333366 100%); /* W3C */
+}
+
+/*.content-wrapper .home header,
+.content-wrapper .find-courses header.search {
     display: none;
 }
 
@@ -110,7 +121,7 @@ ul {
 .content-wrapper .highlighted-courses .courses .course .status,
 .content-wrapper .find-courses .courses .course .status {
     display: none;
-}
+}*/
 
 .view-register .content-wrapper .container,
 .view-register .content-wrapper .introduction,
@@ -155,14 +166,14 @@ ul {
     margin: 0 0 30px 0;
 }
 
-.view-login .content-wrapper .introduction > header > h1.title > span.title-super,
+/*.view-login .content-wrapper .introduction > header > h1.title > span.title-super,
 .view-login .content-wrapper .introduction > header > h1.title > span.title-sub,
 .view-register .content-wrapper .introduction > header > h1.title > span.title-super,
 .view-register .content-wrapper .introduction > header > h1.title > span.title-sub,
 .view-passwordreset .content-wrapper .introduction > header > h1.title > span.title-super,
 .view-passwordreset .content-wrapper .introduction > header > h1.title > span.title-sub {
     text-transform: none;
-}
+}*/
 
 .content-wrapper nav.course-material .inner-wrapper {
     -webkit-box-sizing: border-box;

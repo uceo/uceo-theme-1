@@ -17,7 +17,7 @@ $ioc-green: #41ad49;
 
 /////
 $_gg_black: #000;
-$_gg_blue: #3ea5ce;
+$_gg_green: #A2C252;
 $_gg_grey: #eef0f1;
 /////
 
@@ -30,16 +30,16 @@ $border-color-2: $ioc-grey-2;
 $border-color-3: $ioc-grey-2;
 $outer-border-color: $ioc-grey-2;
 
-$homepage-bg-image: '../themes/stanford/images/stanford-pano.jpg';
+$homepage-bg-image: url('../themes/uceo-theme/images/stanford-pano.jpg');
 $login-banner-image: none;
 $register-banner-image: none;
 $video-thumb-url: '../themes/uceo-theme/images/ionis-video-thumb.png';
 
 $baseline: 20px;
 
-$link-color: $_gg_blue;
-$link-color-d1: $_gg_blue;
-$link-hover: $_gg_blue;
+$link-color: $_gg_green;
+$link-color-d1: $_gg_green;
+$link-hover: $_gg_green;
 $site-status-color: $ioc-pink;
 
 $action-primary-bg: $ioc-blue-2;
