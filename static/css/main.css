@@ -449,6 +449,15 @@ header.global ol.user > li.primary > a > span.avatar {
     background: none;
 }
 
+/* added by ciamsoy */
+.home>header .outer-wrapper {
+    padding-top: 140px;
+}
+.home>header .title {
+    width: auto;
+    margin-left: 0;
+}
+
 @media (max-width : 480px) {
     header.global ol.left.nav-global {
         display: none;
