@@ -7,7 +7,7 @@ html, body {
 }
 
 h2 {
-    color: #3ea5ce;
+    color: #A2C252;
     text-transform: none;
     font-weight: 600;
 }
@@ -43,7 +43,7 @@ ul {
     height: 20px;
     top: 0;
     border-radius: 4px;
-    background-color: #3ea5ce;
+    background-color: #A2C252;
 }
 
 .squaredThree label:after {
@@ -240,6 +240,10 @@ ul {
     color: #A2C252;
 }
 
+.wrapper-footer .bottom-menu li {
+    margin-bottom: 0.5em;
+}
+
 
 /* ==========================================================================
    Header
@@ -348,8 +352,8 @@ header.global ol.nav-courseware li a.cta-login {
     transition: all .1s ease-in;
 
     display: inline-block;
-    border: 1px solid #3ea5ce;
-    color: #3ea5ce;
+    border: 1px solid #A2C252;
+    color: #A2C252;
     padding: 10px 20px;
     background-color: white;
     font-size: 17px;
@@ -362,7 +366,7 @@ header.global ol.nav-courseware li a.cta-login {
 
 header.global ol.nav-courseware li a.cta-login:hover {
     border: 1px solid transparent;
-    background-color: #3ea5ce;
+    background-color: #A2C252;
     color: #fff;
 }
 
@@ -375,7 +379,7 @@ header.global ol.user ul.dropdown-menu {
     z-index: 10;
     top: 36px;
     box-shadow: none;
-    border: 1px solid #3ea5ce;
+    border: 1px solid #A2C252;
     border-top: 0 none;
     border-top-right-radius: 0;
     background-color: white;
@@ -400,11 +404,11 @@ header.global ol.user ul.dropdown-menu li:first-child {
 header.global ol.user ul.dropdown-menu li > a {
     border: 0 none;
     outline: none;
-    color: #3ea5ce !important;
+    color: #A2C252 !important;
 }
 
 header.global ol.user ul.dropdown-menu li:hover {
-    background-color: #3ea5ce;
+    background-color: #A2C252;
 }
 
 header.global ol.user ul.dropdown-menu li:hover > a {
@@ -420,8 +424,8 @@ header.global ol.user > li.primary > a {
     transition: all .1s ease-in;
 
     display: inline-block;
-    border: 1px solid #3ea5ce;
-    color: #3ea5ce;
+    border: 1px solid #A2C252;
+    color: #A2C252;
     padding: 10px 20px;
     background-color: white;
     font-size: 17px;
@@ -440,7 +444,7 @@ header.global ol.user > li.primary > a.dropdown {
 header.global ol.user > li.primary > a:hover,
 header.global ol.user > li.primary > a.dropdown.active {
     border-color: transparent;
-    background-color: #3ea5ce;
+    background-color: #A2C252;
     color: #fff;
 }
 
@@ -452,10 +456,21 @@ header.global ol.user > li.primary > a > span.avatar {
 /* added by ciamsoy */
 .home>header .outer-wrapper {
     padding-top: 140px;
+    min-width: 360px;
 }
 .home>header .title {
-    width: auto;
-    margin-left: 0;
+    width:  85%;
+    margin: 0 auto;
+    float: none;
+}
+.home>header .title>hgroup h1 {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+.home>header .title>hgroup h2 {
+    text-align: center;
+    padding: 1.2em 0;
 }
 
 @media (max-width : 480px) {
@@ -554,7 +569,7 @@ section.dashboard section.my-courses .listing-courses .course-item .cover .cover
     background-color: #0f70b7;
     background-color: white;
     color: white;
-    color: #3ea5ce;
+    color: #A2C252;
     text-align: center;
     font-weight: bold;
 }
@@ -630,7 +645,7 @@ section.dashboard section.my-courses .empty-dashboard-message > a {
    ========================================================================== */
 
 section.course-info header.course-profile {
-    background-color: #3ea5ce;
+    background-color: #A2C252;
     border: 0 none;
     box-shadow: none;
     height: auto;
@@ -867,7 +882,7 @@ section.course-info section.details .inner-wrapper .course-summary {
 }
 
 section.course-info section.details .inner-wrapper .course-summary thead {
-    background-color: #3ea5ce;
+    background-color: #A2C252;
 }
 
 section.course-info section.details .inner-wrapper .course-summary tbody {
@@ -974,7 +989,7 @@ div.info-wrapper section.handouts {
 }
 
 .xmodule_display.xmodule_HtmlModule h2 {
-    color: #3ea5ce;
+    color: #A2C252;
     text-transform: none;
     font-weight: 600;
 }
@@ -994,8 +1009,8 @@ body.discussion .course-tabs .right .new-post-btn {
     text-shadow: none;
     box-shadow: none;
     background-color: white;
-    border: 1px solid #3ea5ce;
-    color: #3ea5ce;
+    border: 1px solid #A2C252;
+    color: #A2C252;
     font-weight: 600;
 }
 
@@ -1006,8 +1021,8 @@ body.discussion .course-tabs .right .new-post-btn {
 body.discussion .course-tabs .right .new-post-btn:hover,
 body.discussion .course-tabs .right .new-post-btn:focus {
     background: none;
-    background-color: #3ea5ce;
-    border: 1px solid #3ea5ce;
+    background-color: #A2C252;
+    border: 1px solid #A2C252;
     color: white;
 }
 
@@ -1039,7 +1054,7 @@ nav.course-material ol.course-tabs li a {
 
 nav.course-material ol.course-tabs li a.active {
     background: 0 none;
-    background-color: #3ea5ce;
+    background-color: #A2C252;
     box-shadow: none;
     text-shadow: none;
 }
@@ -1100,7 +1115,7 @@ nav.course-material ol.course-tabs li a.active {
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active,
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-none {
-    border-color: #3ea5ce;
+    border-color: #A2C252;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-some,
@@ -1137,7 +1152,7 @@ nav.course-material ol.course-tabs li a.active {
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active:after,
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-none:after {
-    color: #3ea5ce;
+    color: #A2C252;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-some:after,
@@ -1301,7 +1316,7 @@ section.login #login-form .group-form-requiredinformation .list-input > li > inp
 
 section.login #login-form .group-form-requiredinformation .list-input > li > input:focus + span::after {
     opacity: 0.2;
-    color: #3ea5ce;
+    color: #A2C252;
 }
 
 section.login #login-form .group-form-requiredinformation .list-input > li:first-child > input{
@@ -1309,7 +1324,7 @@ section.login #login-form .group-form-requiredinformation .list-input > li:first
 }
 
 section.login #login-form .group-form-requiredinformation .list-input > li > input:focus {
-    border: 2px solid #3ea5ce;
+    border: 2px solid #A2C252;
 }
 
 section.login #login-form button[type=submit] {
@@ -1420,7 +1435,7 @@ section.register #register-form .group-form-requiredinformation .list-input > li
 
 section.register #register-form .group-form-requiredinformation .list-input > li > input:focus + span::after {
     opacity: 0.2;
-    color: #3ea5ce;
+    color: #A2C252;
 }
 
 section.register #register-form .group-form-requiredinformation .list-input > li > input{
@@ -1432,7 +1447,7 @@ section.register #register-form .group-form-requiredinformation .list-input > li
 }
 
 section.register #register-form .group-form-requiredinformation .list-input > li > input:focus {
-    border: 2px solid #3ea5ce;
+    border: 2px solid #A2C252;
 }
 
 section.register #register-form .group-form-personalinformation2 .list-input > li > textarea {
@@ -1446,7 +1461,7 @@ section.register #register-form .group-form-personalinformation2 .list-input > l
 }
 
 section.register #register-form .group-form-personalinformation2 .list-input > li > textarea:focus {
-    border: 2px solid #3ea5ce;
+    border: 2px solid #A2C252;
 }
 
 section.register #register-form button[type=submit] {
@@ -1550,12 +1565,12 @@ section.billing-error .error-msg-wrapper .exception-msg {
    ========================================================================== */
 
 header.global ol.user > li.primary:last-child > a.shopping-cart {
-    border-color: #3ea5ce;
+    border-color: #A2C252;
     padding: 10px 20px;
 }
 
 header.global ol.user > li.primary:last-child > a.shopping-cart:hover {
-    border-color: #3ea5ce;
+    border-color: #A2C252;
 }
 
 .cart-list {
@@ -1564,7 +1579,7 @@ header.global ol.user > li.primary:last-child > a.shopping-cart:hover {
 
 .cart-list > h2 {
     font-size: 19px;
-    color: #3ea5ce;
+    color: #A2C252;
 }
 
 .cart-list .cart-table {
