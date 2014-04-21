@@ -37,8 +37,8 @@ $video-thumb-url: '../themes/uceo-theme/images/ionis-video-thumb.png';
 
 $baseline: 20px;
 
-$link-color: $ioc-white;
-$link-color-d1: $ioc-white;
+$link-color: $ioc-black-1;
+$link-color-d1: $ioc-black-1;
 $link-hover: $_gg_green;
 $site-status-color: $ioc-pink;
 
@@ -47,8 +47,8 @@ $action-primary-focused-bg: $ioc-blue-1;
 $action-primary-fg: $ioc-white;
 $action-primary-shadow: transparent;
 
-$header-graphic-super-color: $ioc-blue-1;
-$header-graphic-sub-color: $ioc-black-1;
+$header-graphic-super-color: $ioc-black-1;
+$header-graphic-sub-color: $_gg_green;
 
 $body-bg: $_gg_grey;
 $container-bg: $ioc-white;
