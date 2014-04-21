@@ -21,20 +21,11 @@
     <div class="outer-wrapper">
       <div class="title">
         <hgroup>
-          % if homepage_overlay_html:
-            ${homepage_overlay_html}
-          % else:
-            % if self.stanford_theme_enabled():
-              <h1>${_("Free courses from <strong>{university_name}</strong>").format(university_name="Stanford")}</h1>
-            % else:
-              <h1>${_("Abraham DEWO!!")}</h1>
-            % endif
-            <h2>${_("For anyone, anywhere, anytime")}</h2>
-          % endif
+          <h1>${_("ENTREPRENEURSHIP EDUCATION WITHOUT BOUNDARIES")}</h1>
+          <h2>Program pembelajaran <strong>Entrepreneurship</strong> non-degree terbuka untuk umum dan <strong>GRATIS</strong></h2>
         </hgroup>
 
         ## Disable social buttons for non-edX sites
-        % if not self.theme_enabled():
           <section class="actions">
             <div class="main-cta">
               <a href="#signup-modal" id="signup_action" class="find-courses" rel="leanModal">${_("Sign Up")}</a>
@@ -55,7 +46,6 @@
               </div>
             </div>
           </section>
-          % endif
       </div>
 
       % if show_homepage_promo_video:
@@ -86,7 +76,7 @@
   </section>
 </section>
 
-<section id="video-modal" class="modal home-page-video-modal video-modal">
+<!-- section id="video-modal" class="modal home-page-video-modal video-modal">
   <div class="inner-wrapper">
     <%
       youtube_video_id = homepage_promo_video_youtube_id
@@ -95,7 +85,7 @@
     %>
     <iframe width="640" height="360" src="//www.youtube.com/embed/${youtube_video_id}?showinfo=0" frameborder="0" allowfullscreen></iframe>
   </div>
-</section>
+</section -->
 
 <%block name="js_extra">
    <script type="text/javascript">
