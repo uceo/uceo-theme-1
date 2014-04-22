@@ -843,17 +843,6 @@ section.course-info header.course-profile .intro-inner-wrapper .intro .main-cta 
     box-shadow: none;
 }
 
-section.course-info header.course-profile .intro-inner-wrapper .intro .main-cta span.register.disabled,
-section.course-info header.course-profile .intro-inner-wrapper .intro .main-cta span.add-to-cart {
-    cursor: default;
-    padding: 11px 0 10px 0;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    margin-top: 0;
-    border-color: #ddd;
-    margin-right: 20px;
-}
-
 section.course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register,
 section.course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart,
 section.course-info header.course-profile .intro-inner-wrapper .intro .main-cta span.register.private,
