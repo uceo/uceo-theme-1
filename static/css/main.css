@@ -868,11 +868,6 @@ section.course-info section.course-sidebar {
     margin-left: -400px;
 }
 
-section.course-info section.course-sidebar > section.course-summary {
-    box-shadow: none;
-    border: 0 none;
-}
-
 section.course-info .container {
     min-width: 0;
 }
@@ -950,8 +945,8 @@ section.course-info section.details .inner-wrapper section.course-staff {
 }
 
 section.course-info section.details .inner-wrapper section.course-staff article.teacher .teacher-image {
-    width: 120px;
-    height: auto;
+    width: 240px;
+    height: 160px;
     margin: 3px 17px 0 0;
 }
 
