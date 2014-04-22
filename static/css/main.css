@@ -7,7 +7,6 @@ html, body {
 }
 
 h2 {
-    color: #A2C252;
     text-transform: none;
     font-weight: 600;
 }
@@ -229,12 +228,18 @@ ul {
 
 .wrapper-footer > footer > p > a,
 .wrapper-footer > footer > p > a:link,
-.wrapper-footer > footer > p > a:visited {
+.wrapper-footer > footer > p > a:visited,
+.wrapper-footer footer .bottom-menu li a,
+.wrapper-footer footer .bottom-menu li a:link,
+.wrapper-footer footer .bottom-menu li a:visited
+ {
     color: #fff;
     border: 0 none;
 }
 
-.wrapper-footer > footer > p > a:hover {
+.wrapper-footer > footer > p > a:hover,
+.wrapper-footer footer .bottom-menu li a:hover
+ {
     color: #A2C252;
 }
 
@@ -242,7 +247,25 @@ ul {
     margin-bottom: 0.5em;
 }
 
+/* added by ciamsoy */
+#bottom-logo img {
+    width: 100px;
+    float: left;
+}
+.wrapper-footer footer .right {
+    width: 400px; margin-left: 10px; float: left;
+}
+.wrapper-footer footer .left {
+    margin-left: 10px;
+}
+.wrapper-footer footer .bottom-menu li a
 
+@media (max-width: 480px) {
+    #bottom-logo img {float: none;}
+    .wrapper-footer footer .right {float: none; margin: 0; width: auto;}
+    .wrapper-footer footer .left { margin: 0;}
+}
+ 
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -452,8 +475,9 @@ header.global ol.user > li.primary > a > span.avatar {
 }
 
 /* added by ciamsoy */
+.home>header {height: 320px;}
 .home>header .outer-wrapper {
-    padding-top: 140px;
+    padding-top: 100px;
     min-width: 360px;
 }
 .home>header .title {
@@ -461,21 +485,40 @@ header.global ol.user > li.primary > a > span.avatar {
     margin: 0 auto;
     float: none;
 }
+.home>header .title>hgroup {
+    width: 100%;
+}
 .home>header .title>hgroup h1 {
     font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
     font-weight: bold;
     line-height: 1.2em;
+    font-size: 3em;
 }
 .home>header .title>hgroup h2 {
     text-align: center;
     padding: 1.2em 0;
+    font-weight: 300;
+    font-style: none;
+    color: black;
 }
 
 @media (max-width : 480px) {
+    .home>.container, .home>section.outside-app {
+        min-width: 360px;
+    }
     header.global ol.left.nav-global {
         display: none;
     }
+
+    .home>header .title>hgroup h1 {
+        font-size: 1.5em;
+    }
+
+    .home>header .outer-wrapper {
+        padding-top: 50px;
+    }
+    .home>header .title>hgroup h2 {font-size: 1em;}
 }
 
 /* ==========================================================================
@@ -637,6 +680,16 @@ section.dashboard section.my-courses .empty-dashboard-message > a {
     padding: 8px 12px;
     background-color: #fff;
     border-color: #ddd;
+}
+
+/* added by @ciamsoy */
+@media (max-width: 480px) {
+    .highlighted-courses .courses .courses-listing .courses-listing-item, 
+    .find-courses .courses .courses-listing .courses-listing-item {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /* ==========================================================================
