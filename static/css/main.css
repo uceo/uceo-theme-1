@@ -873,21 +873,8 @@ section.course-info section.course-sidebar > section.course-summary {
     border: 0 none;
 }
 
-.course-info section.details {
-    margin-right: 400px;
-    width: auto;
-}
-
 section.course-info .container {
     min-width: 0;
-}
-
-section.course-info section.details nav {
-    display: none;
-}
-
-section.course-info section.details .inner-wrapper {
-    margin-top: 60px;
 }
 
 section.course-info section.details section {
@@ -964,14 +951,10 @@ section.course-info section.details .inner-wrapper section.course-staff {
 
 section.course-info section.details .inner-wrapper section.course-staff article.teacher .teacher-image {
     width: 120px;
-    height: 160px;
+    height: auto;
     margin: 3px 17px 0 0;
 }
 
-section.course-info section.details .inner-wrapper section.course-staff article.teacher .teacher-image img {
-    width: 120px;
-    height: 160px;
-}
 
 section.course-info section.details .inner-wrapper section.faq article.response:last-child {
     margin-bottom: 10px;
