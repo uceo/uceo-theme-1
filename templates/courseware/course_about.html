@@ -200,70 +200,112 @@
 
   <section class="container">
     <section class="details">
-      <div class="course-summary">
-      </div>
+      <nav>
+        <a href="#" class="active">${_("Overview")}</a>
+      ##  <a href="#">${_("FAQ")}</a>
+      ##  <a href="#">${_("Requirements")}</a>
+      ##  <a href="#">${_("Text-book")}</a>
+      ##  <a href="#">${_("Syllabus")}</a>
+      ##  <a href="#">${_("Reviews")}</a>
+      </nav>
+
       <div class="inner-wrapper">
-          <table class="course-summary">
-            <thead>
-              <tr>
-                % if not course.start_date_is_still_default:
-                  <th class="course-start">
-                    <span class="icon-calendar"></span>
-                    ${_("Classes Start")}</th>
-                % endif
-                  </th>
-                % if get_course_about_section(course, "end_date") or course.end:
-                  <th class="course-end">
-                    <span class="icon-calendar"></span>
-                    ${_("Classes End")}</p>
-                  </th>
-                % endif
-                % if get_course_about_section(course, "effort"):
-                  <th class="course-effort">
-                    <span class="icon-time"></span>
-                    ${_("Estimated Effort")}
-                  </th>
-                % endif
-                % if get_course_about_section(course, "prerequisites"):
-                  <th class="course-prereq">
-                    <span class="icon-cogs"></span>
-                    ${_("Prerequisites")}
-                  </th>
-                % endif
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                % if not course.start_date_is_still_default:
-                  <td>
-                    ${course.start_date_text}
-                  </td>
-                % endif
-                % if get_course_about_section(course, "end_date") or course.end:
-                  <td>
-                    % if get_course_about_section(course, "end_date"):
-                      ${get_course_about_section(course, "end_date")}
-                    % else:
-                      ${course.end_date_text}
-                    % endif
-                  </td>
-                % endif
-                % if get_course_about_section(course, "effort"):
-                  <td>
-                    ${get_course_about_section(course, "effort")}
-                  </td>
-                % endif
-                % if get_course_about_section(course, "prerequisites"):
-                  <td>
-                    ${get_course_about_section(course, "prerequisites")}
-                  </td>
-                % endif
-              </tr>
-            </tbody>
-          </table>
         ${get_course_about_section(course, "overview")}
       </div>
     </section>
+
+    <section class="course-sidebar">
+      <section class="course-summary">
+        <header>
+          % if microsite.get_value('course_about_show_social_links', True):
+          <div class="social-sharing">
+            <div class="sharing-message">${_("Share with friends and family!")}</div>
+            ## TODO: this should probably be an overrideable block,
+            ##       or something allowing themes to do whatever they
+            ##       want here (and on this whole page, really).
+            % if self.stanford_theme_enabled():
+              <a href="http://twitter.com/intent/tweet?text=I+just+registered+for+${course.number}+${get_course_about_section(course, 'title')}!+(http://class.stanford.edu)" class="share">
+                <img src="${static.url('images/social/twitter-sharing.png')}" alt="Tweet that you've registered for this course">
+              </a>
+              <a href="mailto:?subject=Take%20a%20course%20at%20Stanford%20online!&body=I%20just%20registered%20for%20${course.number}%20${get_course_about_section(course, 'title')}+(http://class.stanford.edu)" class="share">
+                <img src="${static.url('images/social/email-sharing.png')}" alt="Email someone to say you've registered for this course">
+              </a>
+            % else:
+              <%
+                site_domain = microsite.get_value('site_domain', 'www.edx.org')
+                platform_name = microsite.get_value('platform_name', 'edX')
+
+                tweet_action = "http://twitter.com/intent/tweet?text=I+just+registered+for+{number}+{title}+through+{account}:+{url}".format(
+                    number=course.number,
+                    title=get_course_about_section(course, 'title'),
+                    account=microsite.get_value('course_about_twitter_account', '@edxonline'),
+                    url="http://{domain}{path}".format(
+                        domain=site_domain,
+                        path=reverse('about_course', args=[course.id])
+                    )
+                )
+
+                facebook_link = microsite.get_value('course_about_facebook_link', 'http://www.facebook.com/EdxOnline')
+
+                email_subject = "mailto:?subject={subject}&body={body}".format(
+                    subject="Take a course with {platform} online".format(platform=platform_name),
+                    body="I just registered for {number} {title} through {platform} {url}".format(
+                        number=course.number,
+                        title=get_course_about_section(course, 'title'),
+                        platform=platform_name,
+                        url="http://{domain}{path}".format(
+                            domain=site_domain,
+                            path=reverse('about_course', args=[course.id]),
+                        )
+                    )
+                ).replace(" ", "%20")
+              %>
+              <a href="${tweet_action}" class="share">
+                <img src="${static.url('images/social/twitter-sharing.png')}" alt="Tweet that you've registered for this course">
+              </a>
+              <a href="${facebook_link}" class="share">
+                <img src="${static.url('images/social/facebook-sharing.png')}" alt="Post a Facebook message to say you've registered for this course">
+              </a>
+              <a href="${email_subject}" class="share">
+                <img src="${static.url('images/social/email-sharing.png')}" alt="Email someone to say you've registered for this course">
+              </a>
+            % endif
+          </div>
+          % endif
+        </header>
+
+        <ol class="important-dates">
+          <li><div class="icon course-number"></div><p>${_("Course Number")}</p><span class="course-number">${course.display_number_with_default | h}</span></li>
+          % if not course.start_date_is_still_default:
+          <li><div class="icon start"></div><p>${_("Classes Start")}</p><span class="start-date">${course.start_date_text}</span></li>
+          % endif
+            ## We plan to ditch end_date (which is not stored in course metadata),
+            ## but for backwards compatibility, show about/end_date blob if it exists.
+            % if get_course_about_section(course, "end_date") or course.end:
+            <li>
+                <div class="icon end"></div>
+                <p>${_("Classes End")}</p><span class="final-date">
+                % if get_course_about_section(course, "end_date"):
+                    ${get_course_about_section(course, "end_date")}
+                % else:
+                    ${course.end_date_text}
+                % endif
+                </span>
+            </li>
+            % endif
+
+          % if get_course_about_section(course, "effort"):
+            <li><div class="icon effort"></div><p>${_("Estimated Effort")}</p><span class="start-date">${get_course_about_section(course, "effort")}</span></li>
+          % endif
+
+          ##<li><div class="icon length"></div><p>${_('Course Length')}</p><span class="course-length">${_('{number} weeks').format(number=15)}</span></li>
+
+          % if get_course_about_section(course, "prerequisites"):
+            <li class="prerequisites"><div class="icon prereq"></div><p>${_("Prerequisites")}</p><span class="start-date">${get_course_about_section(course, "prerequisites")}</span></li>
+          % endif
+        </ol>
+      </section>
+
 
       ## For now, ocw links are the only thing that goes in additional resources
       % if get_course_about_section(course, "ocw_links"):

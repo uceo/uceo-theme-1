@@ -477,7 +477,7 @@ header.global ol.user > li.primary > a > span.avatar {
 /* added by ciamsoy */
 .home>header {height: 320px;}
 .home>header .outer-wrapper {
-    padding-top: 100px;
+    padding-top: 50px;
     min-width: 360px;
 }
 .home>header .title {
@@ -489,7 +489,7 @@ header.global ol.user > li.primary > a > span.avatar {
     width: 100%;
 }
 .home>header .title>hgroup h1 {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-weight: bold;
     line-height: 1.2em;
@@ -501,6 +501,12 @@ header.global ol.user > li.primary > a > span.avatar {
     font-weight: 300;
     font-style: none;
     color: black;
+}
+
+@media (max-width : 768px) {
+    .home>header .title>hgroup h1 {
+        font-size: 2em;
+    }
 }
 
 @media (max-width : 480px) {
@@ -515,9 +521,6 @@ header.global ol.user > li.primary > a > span.avatar {
         font-size: 1.5em;
     }
 
-    .home>header .outer-wrapper {
-        padding-top: 50px;
-    }
     .home>header .title>hgroup h2 {font-size: 1em;}
 }
 
@@ -697,20 +700,18 @@ section.dashboard section.my-courses .empty-dashboard-message > a {
    ========================================================================== */
 
 section.course-info header.course-profile {
-    background-color: #A2C252;
-    border: 0 none;
-    box-shadow: none;
-    height: auto;
     padding: 80px 0;
+    background: #3366cc url('../images/caption-bg.png') left top repeat; /* Old browsers */
+    background: url('../images/caption-bg.png') left top repeat, -moz-radial-gradient(center, ellipse cover,  #3366cc 39%, #333366 100%); /* FF3.6+ */
+    background: url('../images/caption-bg.png') left top repeat, -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(39%,#3366cc), color-stop(100%,#333366)); /* Chrome,Safari4+ */
+    background: url('../images/caption-bg.png') left top repeat, -webkit-radial-gradient(center, ellipse cover,  #3366cc 39%,#333366 100%); /* Chrome10+,Safari5.1+ */
+    background: url('../images/caption-bg.png') left top repeat, -o-radial-gradient(center, ellipse cover,  #3366cc 39%,#333366 100%); /* Opera 12+ */
+    background: url('../images/caption-bg.png') left top repeat, -ms-radial-gradient(center, ellipse cover,  #3366cc 39%,#333366 100%); /* IE10+ */
+    background: url('../images/caption-bg.png') left top repeat, radial-gradient(ellipse at center,  #3366cc 39%,#333366 100%); /* W3C */
 }
 
 section.course-info header.course-profile .intro-inner-wrapper {
     max-width: 1170px;
-    box-shadow: none;
-    border: 0 none;
-    padding: 0 15px;
-    background: none;
-    min-width: 0;
 }
 
 section.course-info header.course-profile .intro-inner-wrapper .table {
@@ -1380,7 +1381,6 @@ section.login #login-form .group-form-requiredinformation .list-input > li > inp
 }
 
 section.login #login-form button[type=submit] {
-    width: 20%;
     background-color: #A2C252;
     color: #fff;
     border: 1px solid transparent;
@@ -1517,7 +1517,6 @@ section.register #register-form .group-form-personalinformation2 .list-input > l
 }
 
 section.register #register-form button[type=submit] {
-    width: 20%;
     background-color: #A2C252;
     color: #fff;
     border: 1px solid transparent;

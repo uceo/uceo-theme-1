@@ -43,12 +43,23 @@
     });
 
     (function() {
+      toggleSubmitButton(true);
+
+      $('#register-form').on('submit', function() {
+        toggleSubmitButton(false);
+      });
+
+      $('#register-form').on('ajax:error', function() {
+        toggleSubmitButton(true);
+      });
+
       $('#register-form').on('ajax:success', function(event, json, xhr) {
         var url = json.redirect_url || "${reverse('dashboard')}";
         location.href = url;
       });
 
       $('#register-form').on('ajax:error', function(event, jqXHR, textStatus) {
+        toggleSubmitButton(true);
         json = $.parseJSON(jqXHR.responseText);
         $('.status.message.submission-error').addClass('is-shown').focus();
         $('.status.message.submission-error .message-copy').html(json.value).stop().css("display", "block");
@@ -56,6 +67,23 @@
         $("[data-field='"+json.field+"']").addClass('field-error')
       });
     })(this);
+
+    function toggleSubmitButton(enable) {
+      var $submitButton = $('form .form-actions #submit');
+
+      if(enable) {
+        $submitButton.
+          removeClass('is-disabled').
+          removeProp('disabled').
+          html("${_('Create My {platform_name} Account').format(platform_name=platform_name)}");
+      }
+      else {
+        $submitButton.
+          addClass('is-disabled').
+          prop('disabled', true).
+          text("${_(u'Processing your account information…')}");
+      }
+    }
   </script>
 </%block>
 
@@ -90,20 +118,22 @@
 
         <ol class="list-input">
           <li class="field required text" id="field-email">
-            <input class="" id="email" type="email" name="email" value="" placeholder="Adresse email" data-required="true" aria-required="true" />
-            <span></span>
+            <label for="email">${_('E-mail')}</label>
+            <input class="" id="email" type="email" name="email" value="" placeholder="${_('example: username@domain.com')}" required aria-required="true" />
           </li>
           <li class="field required password" id="field-password">
-            <input id="password" type="password" name="password" value="" placeholder="Mot de passe" data-required="true" aria-required="true" />
-            <span></span>
+            <label for="password">${_('Password')}</label>
+            <input id="password" type="password" name="password" value="" required aria-required="true" />
           </li>
           <li class="field required text" id="field-username">
-            <input id="username" type="text" name="username" value="" placeholder="Pseudo (visible dans les discussions/forums)" data-required="true" aria-required="true" aria-describedby="username-tip"/>
-            <span></span>
+            <label for="username">${_('Public Username')}</label>
+            <input id="username" type="text" name="username" value="" placeholder="${_('example: JaneDoe')}" required aria-required="true" aria-describedby="username-tip"/>
+            <span class="tip tip-input" id="username-tip">${_('Will be shown in any discussions or forums you participate in')} <strong>(${_('cannot be changed later')})</strong></span>
           </li>
           <li class="field required text" id="field-name">
-            <input id="name" type="text" name="name" value="" placeholder="Nom complet" data-required="true" aria-required="true" aria-describedby="name-tip" />
-            <span></span>
+            <label for="name">${_('Full Name')}</label>
+            <input id="name" type="text" name="name" value="" placeholder="${_('example: Jane Doe')}" required aria-required="true" aria-describedby="name-tip" />
+            <span class="tip tip-input" id="name-tip">${_("Needed for any certificates you may earn")}</span>
           </li>
         </ol>
 
@@ -194,13 +224,15 @@
         <ol class="list-input">
           % if settings.REGISTRATION_EXTRA_FIELDS['mailing_address'] != 'hidden':
           <li class="field ${settings.REGISTRATION_EXTRA_FIELDS['mailing_address']} text" id="field-address-mailing">
-            <textarea id="address-mailing" name="mailing_address" value="" placeholder="Adresse postale"${'required aria-required="true"' if settings.REGISTRATION_EXTRA_FIELDS['mailing_address'] == 'required' else ''}></textarea>
+            <label for="address-mailing">${_("Mailing Address")}</label>
+            <textarea id="address-mailing" name="mailing_address" value="" ${'required aria-required="true"' if settings.REGISTRATION_EXTRA_FIELDS['mailing_address'] == 'required' else ''}></textarea>
           </li>
           % endif
 
           % if settings.REGISTRATION_EXTRA_FIELDS['goals'] != 'hidden':
           <li class="field ${settings.REGISTRATION_EXTRA_FIELDS['goals']} text" id="field-goals">
-            <textarea id="goals" name="goals" value="" placeholder="Merci de nous faire part de vos motivations concernant l'inscription à IONISx" ${'required aria-required="true"' if settings.REGISTRATION_EXTRA_FIELDS['goals'] == 'required' else ''}></textarea>
+            <label for="goals">${_("Please share with us your reasons for registering with {platform_name}").format(platform_name=platform_name)}</label>
+            <textarea id="goals" name="goals" value="" ${'required aria-required="true"' if settings.REGISTRATION_EXTRA_FIELDS['goals'] == 'required' else ''}></textarea>
           </li>
           % endif
         </ol>
@@ -243,7 +275,7 @@
 % endif
 
       <div class="form-actions">
-        <button name="submit" type="submit" id="submit" class="action action-primary action-update">S'inscrire</button>
+        <button name="submit" type="submit" id="submit" class="action action-primary action-update">${_('Register')} <span class="orn-plus">+</span> ${_('Create My Account')}</button>
       </div>
     </form>
   </section>
