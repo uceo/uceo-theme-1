@@ -43,7 +43,7 @@ ul {
     height: 20px;
     top: 0;
     border-radius: 4px;
-    background-color: #A2C252;
+    background-color: #ddd;
 }
 
 .squaredThree label:after {
@@ -167,11 +167,8 @@ ul {
 }
 
 .view-login .content-wrapper .introduction > header > h1.title > span.title-super,
-.view-login .content-wrapper .introduction > header > h1.title > span.title-sub,
 .view-register .content-wrapper .introduction > header > h1.title > span.title-super,
-.view-register .content-wrapper .introduction > header > h1.title > span.title-sub,
-.view-passwordreset .content-wrapper .introduction > header > h1.title > span.title-super,
-.view-passwordreset .content-wrapper .introduction > header > h1.title > span.title-sub {
+.view-passwordreset .content-wrapper .introduction > header > h1.title > span.title-super {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
 }
@@ -233,7 +230,7 @@ ul {
 .wrapper-footer > footer > p > a,
 .wrapper-footer > footer > p > a:link,
 .wrapper-footer > footer > p > a:visited {
-    color: rgb(0,102,153);
+    color: #fff;
     border: 0 none;
 }
 
@@ -555,7 +552,7 @@ section.dashboard section.my-courses .listing-courses .course-item .cover .cover
 }
 
 section.dashboard section.my-courses .listing-courses .course-item .cover .cover-course-status.course-open {
-    color: #2ecc71;
+    color: #A2C252;
 }
 
 section.dashboard section.my-courses .listing-courses .course-item .cover .cover-course-status.course-ended {
@@ -613,7 +610,7 @@ section.dashboard section.my-courses .listing-courses .course-item .info .enter-
     box-shadow: none;
     text-shadow: none;
     background: none;
-    background-color: #2ecc71;
+    background-color: #A2C252;
     border: 1px solid transparent;
     color: white;
 }
@@ -623,8 +620,8 @@ section.dashboard section.my-courses .listing-courses .course-item .info .enter-
     text-shadow: none;
     background: none;
     background-color: white;
-    border: 1px solid #2ecc71;
-    color: #2ecc71;
+    border: 1px solid #A2C252;
+    color: #A2C252;
 }
 
 section.dashboard section.my-courses .empty-dashboard-message {
@@ -736,7 +733,7 @@ section.course-info header.course-profile .intro-inner-wrapper .social-sharing {
 section.course-info header.course-profile .intro-inner-wrapper .social-sharing span {
     font-family: FontAwesome;
     font-size: 42px;
-    color: #2ecc71;
+    color: #A2C252;
 }
 
 section.course-info header.course-profile .intro-inner-wrapper .social-sharing span:hover {
@@ -1126,7 +1123,7 @@ nav.course-material ol.course-tabs li a.active {
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-done {
-    border-color: #2ecc71;
+    border-color: #A2C252;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a:after {
@@ -1163,7 +1160,7 @@ nav.course-material ol.course-tabs li a.active {
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-done:after {
-    color: #2ecc71;
+    color: #A2C252;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active {
@@ -1215,8 +1212,8 @@ nav.course-material ol.course-tabs li a.active {
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.inactive.progress-done,
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.visited.progress-done {
-    background-color: #2ecc71;
-    border-color: #2ecc71;
+    background-color: #A2C252;
+    border-color: #A2C252;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.inactive.progress-done:hover,
@@ -1226,7 +1223,7 @@ nav.course-material ol.course-tabs li a.active {
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.inactive.progress-done:hover:after,
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.visited.progress-done:hover:after  {
-    color: #2ecc71;
+    color: #A2C252;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a > p {
@@ -1299,12 +1296,12 @@ section.login #login-form .group-form-requiredinformation .list-input > li > inp
 }
 
 section.login #login-form .group-form-requiredinformation .list-input > li > input.valid-input {
-    border: 2px solid #2ecc71;
+    border: 2px solid #A2C252;
 }
 
 section.login #login-form .group-form-requiredinformation .list-input > li > input.valid-input + span::after {
     content: "\f058";
-    color: #2ecc71;
+    color: #A2C252;
 }
 
 section.login #login-form .group-form-requiredinformation .list-input > li > input.invalid-input {
@@ -1331,7 +1328,7 @@ section.login #login-form .group-form-requiredinformation .list-input > li > inp
 
 section.login #login-form button[type=submit] {
     width: 20%;
-    background-color: #2ecc71;
+    background-color: #A2C252;
     color: #fff;
     border: 1px solid transparent;
     box-shadow: none;
@@ -1342,8 +1339,8 @@ section.login #login-form button[type=submit] {
 }
 
 section.login #login-form button[type=submit]:hover {
-    color: #2ecc71;
-    border-color: #2ecc71;
+    color: #A2C252;
+    border-color: #A2C252;
     background-color: #fff;
 }
 
@@ -1418,12 +1415,12 @@ section.register #register-form .group-form-requiredinformation .list-input > li
 }
 
 section.register #register-form .group-form-requiredinformation .list-input > li > input.valid-input {
-    border: 2px solid #2ecc71;
+    border: 2px solid #A2C252;
 }
 
 section.register #register-form .group-form-requiredinformation .list-input > li > input.valid-input + span::after {
     content: "\f058";
-    color: #2ecc71;
+    color: #A2C252;
 }
 
 section.register #register-form .group-form-requiredinformation .list-input > li > input.invalid-input {
@@ -1468,7 +1465,7 @@ section.register #register-form .group-form-personalinformation2 .list-input > l
 
 section.register #register-form button[type=submit] {
     width: 20%;
-    background-color: #2ecc71;
+    background-color: #A2C252;
     color: #fff;
     border: 1px solid transparent;
     box-shadow: none;
@@ -1479,8 +1476,8 @@ section.register #register-form button[type=submit] {
 }
 
 section.register #register-form button[type=submit]:hover {
-    color: #2ecc71;
-    border-color: #2ecc71;
+    color: #A2C252;
+    border-color: #A2C252;
     background-color: #fff;
 }
 
@@ -1529,7 +1526,7 @@ section.register #register-form #customCheckboxHonor {
    ========================================================================== */
 
 body.purchase-receipt section.cart-list .content-main h1 {
-    color: #2ecc71;
+    color: #A2C252;
 }
 
 body.purchase-receipt section.cart-list table.order-receipt th.total {
@@ -1626,7 +1623,7 @@ header.global ol.user > li.primary:last-child > a.shopping-cart:hover {
     background: none;
     box-shadow: none;
     text-shadow: none;
-    background-color: #2ecc71;
+    background-color: #A2C252;
     color: #fff;
     padding: 10px 20px;
     transition: all .1s ease-in;
@@ -1637,9 +1634,9 @@ header.global ol.user > li.primary:last-child > a.shopping-cart:hover {
 
 .cart-list form input[type="submit"]:hover {
     background: none;
-    color: #2ecc71;
+    color: #A2C252;
     background-color: #fff;
-    border: 1px solid #2ecc71;
+    border: 1px solid #A2C252;
 }
 
 .cart-list form input[type="submit"]:active {
