@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    max-width: 1366px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -29,8 +29,8 @@ ul {
     box-sizing: border-box;
 
     max-width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .squaredThree {
@@ -96,7 +96,7 @@ ul {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    background-color: #565656;
+    background-color: #d3d3d3;
     min-height: 100vh;
     margin-top: -177px;
     padding-top: 177px;
@@ -227,6 +227,10 @@ ul {
     min-width: 0;
 }
 
+.wrapper-footer ol {
+    text-decoration: none;
+}
+
 .wrapper-footer > footer > p {
     color: #565656;
     font-size: 14px;
@@ -246,7 +250,7 @@ ul {
 .wrapper-footer > footer > p > a:hover,
 .wrapper-footer footer .bottom-menu li a:hover
  {
-    color: #A2C252;
+    color: #819B40;
 }
 
 .wrapper-footer .bottom-menu li {
@@ -363,7 +367,7 @@ header.global ol.nav-global li a {
 .view-login header.global ol.nav-global li a:hover,
 .view-register header.global ol.nav-global li a:hover,
 header.global ol.nav-global li a:hover {
-    color: #A2C252 !important;
+    color: #819B40 !important;
 }
 
 header.global ol.nav-courseware {
@@ -386,14 +390,14 @@ header.global ol.nav-courseware li a.cta-login {
     vertical-align: middle;
     cursor: pointer;
     white-space: nowrap;
-    background-color: #A2C252;
+    background-color: #819B40;
     color: #fff;
     border: 1px solid transparent;
 }
 
 header.global ol.nav-courseware li a.cta-login:hover {
-    border: 1px solid #A2C252;
-    color: #A2C252;
+    border: 1px solid #819B40;
+    color: #819B40;
     background-color: white;
 }
 
@@ -406,7 +410,7 @@ header.global ol.user ul.dropdown-menu {
     z-index: 10;
     top: 36px;
     box-shadow: none;
-    border: 1px solid #A2C252;
+    border: 1px solid #819B40;
     border-top: 0 none;
     border-top-right-radius: 0;
     background-color: white;
@@ -431,11 +435,11 @@ header.global ol.user ul.dropdown-menu li:first-child {
 header.global ol.user ul.dropdown-menu li > a {
     border: 0 none;
     outline: none;
-    color: #A2C252 !important;
+    color: #819B40 !important;
 }
 
 header.global ol.user ul.dropdown-menu li:hover {
-    background-color: #A2C252;
+    background-color: #819B40;
 }
 
 header.global ol.user ul.dropdown-menu li:hover > a {
@@ -451,8 +455,8 @@ header.global ol.user > li.primary > a {
     transition: all .1s ease-in;
 
     display: inline-block;
-    border: 1px solid #A2C252;
-    color: #A2C252;
+    border: 1px solid #819B40;
+    color: #819B40;
     padding: 10px 20px;
     background-color: white;
     font-size: 17px;
@@ -471,7 +475,7 @@ header.global ol.user > li.primary > a.dropdown {
 header.global ol.user > li.primary > a:hover,
 header.global ol.user > li.primary > a.dropdown.active {
     border-color: transparent;
-    background-color: #A2C252;
+    background-color: #819B40;
     color: #fff;
 }
 
@@ -604,7 +608,7 @@ section.dashboard section.my-courses .listing-courses .course-item .cover .cover
 }
 
 section.dashboard section.my-courses .listing-courses .course-item .cover .cover-course-status.course-open {
-    color: #A2C252;
+    color: #819B40;
 }
 
 section.dashboard section.my-courses .listing-courses .course-item .cover .cover-course-status.course-ended {
@@ -620,7 +624,7 @@ section.dashboard section.my-courses .listing-courses .course-item .cover .cover
     background-color: #0f70b7;
     background-color: white;
     color: white;
-    color: #A2C252;
+    color: #819B40;
     text-align: center;
     font-weight: bold;
 }
@@ -662,7 +666,7 @@ section.dashboard section.my-courses .listing-courses .course-item .info .enter-
     box-shadow: none;
     text-shadow: none;
     background: none;
-    background-color: #A2C252;
+    background-color: #819B40;
     border: 1px solid transparent;
     color: white;
 }
@@ -672,8 +676,8 @@ section.dashboard section.my-courses .listing-courses .course-item .info .enter-
     text-shadow: none;
     background: none;
     background-color: white;
-    border: 1px solid #A2C252;
-    color: #A2C252;
+    border: 1px solid #819B40;
+    color: #819B40;
 }
 
 section.dashboard section.my-courses .empty-dashboard-message {
@@ -793,7 +797,7 @@ section.course-info header.course-profile .intro-inner-wrapper .social-sharing {
 section.course-info header.course-profile .intro-inner-wrapper .social-sharing span {
     font-family: FontAwesome;
     font-size: 42px;
-    color: #A2C252;
+    color: #819B40;
 }
 
 section.course-info header.course-profile .intro-inner-wrapper .social-sharing span:hover {
@@ -912,7 +916,7 @@ section.course-info section.details .inner-wrapper .course-summary {
 }
 
 section.course-info section.details .inner-wrapper .course-summary thead {
-    background-color: #A2C252;
+    background-color: #819B40;
 }
 
 section.course-info section.details .inner-wrapper .course-summary tbody {
@@ -1015,7 +1019,7 @@ div.info-wrapper section.handouts {
 }
 
 .xmodule_display.xmodule_HtmlModule h2 {
-    color: #A2C252;
+    color: #819B40;
     text-transform: none;
     font-weight: 600;
 }
@@ -1035,8 +1039,8 @@ body.discussion .course-tabs .right .new-post-btn {
     text-shadow: none;
     box-shadow: none;
     background-color: white;
-    border: 1px solid #A2C252;
-    color: #A2C252;
+    border: 1px solid #819B40;
+    color: #819B40;
     font-weight: 600;
 }
 
@@ -1047,8 +1051,8 @@ body.discussion .course-tabs .right .new-post-btn {
 body.discussion .course-tabs .right .new-post-btn:hover,
 body.discussion .course-tabs .right .new-post-btn:focus {
     background: none;
-    background-color: #A2C252;
-    border: 1px solid #A2C252;
+    background-color: #819B40;
+    border: 1px solid #819B40;
     color: white;
 }
 
@@ -1080,7 +1084,7 @@ nav.course-material ol.course-tabs li a {
 
 nav.course-material ol.course-tabs li a.active {
     background: 0 none;
-    background-color: #A2C252;
+    background-color: #819B40;
     box-shadow: none;
     text-shadow: none;
 }
@@ -1141,7 +1145,7 @@ nav.course-material ol.course-tabs li a.active {
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active,
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-none {
-    border-color: #A2C252;
+    border-color: #819B40;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-some,
@@ -1150,7 +1154,7 @@ nav.course-material ol.course-tabs li a.active {
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-done {
-    border-color: #A2C252;
+    border-color: #819B40;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a:after {
@@ -1178,7 +1182,7 @@ nav.course-material ol.course-tabs li a.active {
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active:after,
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-none:after {
-    color: #A2C252;
+    color: #819B40;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-some:after,
@@ -1187,7 +1191,7 @@ nav.course-material ol.course-tabs li a.active {
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-done:after {
-    color: #A2C252;
+    color: #819B40;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active {
@@ -1239,8 +1243,8 @@ nav.course-material ol.course-tabs li a.active {
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.inactive.progress-done,
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.visited.progress-done {
-    background-color: #A2C252;
-    border-color: #A2C252;
+    background-color: #819B40;
+    border-color: #819B40;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.inactive.progress-done:hover,
@@ -1250,7 +1254,7 @@ nav.course-material ol.course-tabs li a.active {
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.inactive.progress-done:hover:after,
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.visited.progress-done:hover:after  {
-    color: #A2C252;
+    color: #819B40;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a > p {
@@ -1323,12 +1327,12 @@ section.login #login-form .group-form-requiredinformation .list-input > li > inp
 }
 
 section.login #login-form .group-form-requiredinformation .list-input > li > input.valid-input {
-    border: 2px solid #A2C252;
+    border: 2px solid #819B40;
 }
 
 section.login #login-form .group-form-requiredinformation .list-input > li > input.valid-input + span::after {
     content: "\f058";
-    color: #A2C252;
+    color: #819B40;
 }
 
 section.login #login-form .group-form-requiredinformation .list-input > li > input.invalid-input {
@@ -1342,7 +1346,7 @@ section.login #login-form .group-form-requiredinformation .list-input > li > inp
 
 section.login #login-form .group-form-requiredinformation .list-input > li > input:focus + span::after {
     opacity: 0.2;
-    color: #A2C252;
+    color: #819B40;
 }
 
 section.login #login-form .group-form-requiredinformation .list-input > li:first-child > input{
@@ -1350,11 +1354,11 @@ section.login #login-form .group-form-requiredinformation .list-input > li:first
 }
 
 section.login #login-form .group-form-requiredinformation .list-input > li > input:focus {
-    border: 2px solid #A2C252;
+    border: 2px solid #819B40;
 }
 
 section.login #login-form button[type=submit] {
-    background-color: #A2C252;
+    background-color: #819B40;
     color: #fff;
     border: 1px solid transparent;
     box-shadow: none;
@@ -1365,8 +1369,8 @@ section.login #login-form button[type=submit] {
 }
 
 section.login #login-form button[type=submit]:hover {
-    color: #A2C252;
-    border-color: #A2C252;
+    color: #819B40;
+    border-color: #819B40;
     background-color: #fff;
 }
 
@@ -1441,12 +1445,12 @@ section.register #register-form .group-form-requiredinformation .list-input > li
 }
 
 section.register #register-form .group-form-requiredinformation .list-input > li > input.valid-input {
-    border: 2px solid #A2C252;
+    border: 2px solid #819B40;
 }
 
 section.register #register-form .group-form-requiredinformation .list-input > li > input.valid-input + span::after {
     content: "\f058";
-    color: #A2C252;
+    color: #819B40;
 }
 
 section.register #register-form .group-form-requiredinformation .list-input > li > input.invalid-input {
@@ -1460,7 +1464,7 @@ section.register #register-form .group-form-requiredinformation .list-input > li
 
 section.register #register-form .group-form-requiredinformation .list-input > li > input:focus + span::after {
     opacity: 0.2;
-    color: #A2C252;
+    color: #819B40;
 }
 
 section.register #register-form .group-form-requiredinformation .list-input > li > input{
@@ -1472,7 +1476,7 @@ section.register #register-form .group-form-requiredinformation .list-input > li
 }
 
 section.register #register-form .group-form-requiredinformation .list-input > li > input:focus {
-    border: 2px solid #A2C252;
+    border: 2px solid #819B40;
 }
 
 section.register #register-form .group-form-personalinformation2 .list-input > li > textarea {
@@ -1486,11 +1490,11 @@ section.register #register-form .group-form-personalinformation2 .list-input > l
 }
 
 section.register #register-form .group-form-personalinformation2 .list-input > li > textarea:focus {
-    border: 2px solid #A2C252;
+    border: 2px solid #819B40;
 }
 
 section.register #register-form button[type=submit] {
-    background-color: #A2C252;
+    background-color: #819B40;
     color: #fff;
     border: 1px solid transparent;
     box-shadow: none;
@@ -1501,8 +1505,8 @@ section.register #register-form button[type=submit] {
 }
 
 section.register #register-form button[type=submit]:hover {
-    color: #A2C252;
-    border-color: #A2C252;
+    color: #819B40;
+    border-color: #819B40;
     background-color: #fff;
 }
 
@@ -1551,7 +1555,7 @@ section.register #register-form #customCheckboxHonor {
    ========================================================================== */
 
 body.purchase-receipt section.cart-list .content-main h1 {
-    color: #A2C252;
+    color: #819B40;
 }
 
 body.purchase-receipt section.cart-list table.order-receipt th.total {
@@ -1589,12 +1593,12 @@ section.billing-error .error-msg-wrapper .exception-msg {
    ========================================================================== */
 
 header.global ol.user > li.primary:last-child > a.shopping-cart {
-    border-color: #A2C252;
+    border-color: #819B40;
     padding: 10px 20px;
 }
 
 header.global ol.user > li.primary:last-child > a.shopping-cart:hover {
-    border-color: #A2C252;
+    border-color: #819B40;
 }
 
 .cart-list {
@@ -1603,7 +1607,7 @@ header.global ol.user > li.primary:last-child > a.shopping-cart:hover {
 
 .cart-list > h2 {
     font-size: 19px;
-    color: #A2C252;
+    color: #819B40;
 }
 
 .cart-list .cart-table {
@@ -1648,7 +1652,7 @@ header.global ol.user > li.primary:last-child > a.shopping-cart:hover {
     background: none;
     box-shadow: none;
     text-shadow: none;
-    background-color: #A2C252;
+    background-color: #819B40;
     color: #fff;
     padding: 10px 20px;
     transition: all .1s ease-in;
@@ -1659,9 +1663,9 @@ header.global ol.user > li.primary:last-child > a.shopping-cart:hover {
 
 .cart-list form input[type="submit"]:hover {
     background: none;
-    color: #A2C252;
+    color: #819B40;
     background-color: #fff;
-    border: 1px solid #A2C252;
+    border: 1px solid #819B40;
 }
 
 .cart-list form input[type="submit"]:active {
