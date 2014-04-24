@@ -96,7 +96,7 @@ ul {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    background-color: #d3d3d3;
+    background-color: #ebebeb;
     min-height: 100vh;
     margin-top: -177px;
     padding-top: 177px;
@@ -203,18 +203,18 @@ section.container .marker {
     margin-left: -0.75em;
     text-align: center;
     padding: 1em 0;
-    -webkit-box-shadow: 0 6px 10px -8px;
-    -moz-box-shadow: 0 6px 10px -8px;
-    box-shadow: 0 6px 10px -8px;
+    -webkit-box-shadow: 0 6px 40px -20px;
+    -moz-box-shadow: 0 6px 40px -20px;
+    box-shadow: 0 6px 40px -20px;
     color: #565656;
     font-size: 1.3em;
     font-weight: bold;
     letter-spacing: 1px;
 }
 section.container .marker.middle {
-    -webkit-box-shadow: 0 0 10px -8px;
-    -moz-box-shadow: 0 0 10px -8px;
-    box-shadow: 0 0 10px -8px;
+    -webkit-box-shadow: 0 0 40 -20px;
+    -moz-box-shadow: 0 0 40 -20px;
+    box-shadow: 0 0 40 -20px;
 }
 
 
@@ -289,7 +289,6 @@ section.container .marker.middle {
 .wrapper-footer footer .left {
     margin-left: 10px;
 }
-.wrapper-footer footer .bottom-menu li a
 
 @media (max-width: 480px) {
     #bottom-logo img {float: none;}
