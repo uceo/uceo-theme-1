@@ -198,7 +198,7 @@ ul {
 
 /* added by @ciamsoy */
 section.container .marker {
-    background: url("/static/themes/uceo-theme/images/furley-bg.d57486ab23b7.png");
+    background: url("../images/furley-bg.png");
     width: 1140px;
     margin-left: -0.75em;
     text-align: center;
