@@ -196,6 +196,27 @@ ul {
     margin: 0;
 }
 
+/* added by @ciamsoy */
+section.container .marker {
+    background: url("/static/themes/uceo-theme/images/furley-bg.d57486ab23b7.png");
+    width: 1140px;
+    margin-left: -0.75em;
+    text-align: center;
+    padding: 1em 0;
+    -webkit-box-shadow: 0 6px 10px -8px;
+    -moz-box-shadow: 0 6px 10px -8px;
+    box-shadow: 0 6px 10px -8px;
+    color: #565656;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+section.container .marker.middle {
+    -webkit-box-shadow: 0 0 10px -8px;
+    -moz-box-shadow: 0 0 10px -8px;
+    box-shadow: 0 0 10px -8px;
+}
+
 
 /* ==========================================================================
    Footer
@@ -228,7 +249,7 @@ ul {
 }
 
 .wrapper-footer ol {
-    text-decoration: none;
+    list-style: none;
 }
 
 .wrapper-footer > footer > p {
