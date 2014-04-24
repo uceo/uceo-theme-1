@@ -2,8 +2,14 @@
    Global
    ========================================================================== */
 
-html, body {
+html {
+    background: url('../images/furley-bg.png');
     background-color: white;
+}
+
+body {
+    max-width: 1366px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -90,7 +96,7 @@ ul {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    background-color: #eef0f1;
+    background-color: #565656;
     min-height: 100vh;
     margin-top: -177px;
     padding-top: 177px;
@@ -199,7 +205,7 @@ ul {
 .view-register .wrapper-footer,
 .view-passwordreset .wrapper-footer,
 .wrapper-footer {
-    background: url('../images/header-bg.png');
+    background: url('../images/furley-bg.png');
     box-shadow: none;
     border: 0 none;
 }
@@ -222,7 +228,7 @@ ul {
 }
 
 .wrapper-footer > footer > p {
-    color: #fff;
+    color: #565656;
     font-size: 14px;
 }
 
@@ -233,7 +239,7 @@ ul {
 .wrapper-footer footer .bottom-menu li a:link,
 .wrapper-footer footer .bottom-menu li a:visited
  {
-    color: #fff;
+    color: #565656;
     border: 0 none;
 }
 
@@ -281,7 +287,7 @@ header.global.slim {
     height: auto;
     padding: 0;
     border: 0 none;
-    background: url('../images/header-bg.png');
+    background: url('../images/furley-bg.png');
 }
 
 header.global:hover,
@@ -328,7 +334,7 @@ header.global.slim > nav h2 {
 }
 
 header.global.slim > nav h2 span {
-    color: #eef0f1;
+    color: #565656;
 }
 
 header.global > nav h1.logo,
@@ -351,7 +357,7 @@ header.global ol.nav-global {
 .view-register header.global ol.nav-global li a,
 header.global ol.nav-global li a {
     font-weight: normal;
-    color: #eef0f1 !important;
+    color: #565656 !important;
 }
 
 .view-login header.global ol.nav-global li a:hover,
@@ -715,7 +721,7 @@ section.course-info header.course-profile .intro-inner-wrapper {
 }
 
 section.course-info header.course-profile .intro-inner-wrapper .table {
-    background: #eef0f1;
+    background: #565656;
     display: block;
     -webkit-border-radius: 4px;
     border-radius: 4px;
