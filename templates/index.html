@@ -27,6 +27,50 @@
           <h2>Program pembelajaran <strong>Entrepreneurship</strong> non-degree terbuka untuk umum dan <strong>GRATIS</strong></h2>
         </hgroup>
 
+
+        <section class="register container">
+          <section role="main" class="content">
+            <form role="form" id="register-form" method="post" data-remote="true" action="/create_account" data-validator="true" novalidate>
+              <input type="hidden" name="csrfmiddlewaretoken" value="${ csrf_token }">
+              <div role="alert" class="status message submission-error" tabindex="-1">
+                <h3 class="message-title">${_("The following errors occurred while processing your registration:")} </h3>
+                <ul class="message-copy"> </ul>
+              </div>
+
+              <div class="group group-form group-form-requiredinformation">
+                <h2 class="sr">${_('Required Information')}</h2>
+
+                <ol class="list-input">
+                  <li class="field required text" id="field-email">
+                    <label for="email">${_('E-mail')}</label>
+                    <input class="" id="email" type="email" name="email" value="" placeholder="${_('example: username@domain.com')}" required aria-required="true" />
+                  </li>
+                  <li class="field required password" id="field-password">
+                    <label for="password">${_('Password')}</label>
+                    <input id="password" type="password" name="password" value="" required aria-required="true" />
+                  </li>
+                  <li class="field required text" id="field-username">
+                    <label for="username">${_('Public Username')}</label>
+                    <input id="username" type="text" name="username" value="" placeholder="${_('example: JaneDoe')}" required aria-required="true" aria-describedby="username-tip"/>
+                    <span class="tip tip-input" id="username-tip">${_('Will be shown in any discussions or forums you participate in')} <strong>(${_('cannot be changed later')})</strong></span>
+                  </li>
+                  <li class="field required text" id="field-name">
+                    <label for="name">${_('Full Name')}</label>
+                    <input id="name" type="text" name="name" value="" placeholder="${_('example: Jane Doe')}" required aria-required="true" aria-describedby="name-tip" />
+                    <span class="tip tip-input" id="name-tip">${_("Needed for any certificates you may earn")}</span>
+                  </li>
+                </ol>
+
+              </div>
+
+              <div class="form-actions">
+                <button name="submit" type="submit" id="submit" class="action action-primary action-update">${_('Register')} <span class="orn-plus">+</span> ${_('Create My Account')}</button>
+              </div>
+            </form>
+          </section>
+
+        </section>
+
         ## Disable social buttons for non-edX sites
           <section class="actions">
             <div class="main-cta">
@@ -122,11 +166,12 @@
       BLOG AND NEWS
     </section>
     <div>
-      <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fciputra-uceo.net%2Fblog%3Fformat%3Drss&chan=linkno&num=5&desc=200&utf=y&html=p"  charset="UTF-8" type="text/javascript"></script>
+      <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.ciputra-uceo.net%2Fblog%3Fformat%3Drss&chan=y&desc=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
 
       <noscript>
-      <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fciputra-uceo.net%2Fblog%3Fformat%3Drss&chan=linkno&num=5&desc=200&utf=y&html=y">View RSS feed</a>
+      <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.ciputra-uceo.net%2Fblog%3Fformat%3Drss&chan=y&desc=1&utf=y&html=y">View RSS feed</a>
       </noscript>
+
     </div>
   </section>
 </section>
