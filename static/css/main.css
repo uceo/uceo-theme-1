@@ -234,6 +234,7 @@ section.container .marker.middle {
 .news li {
     line-height: 1.5em;
     margin-bottom: 1em;
+    padding: 0;
 }
 .news li a {
     font-weight: bold;
@@ -241,6 +242,7 @@ section.container .marker.middle {
 .news li a:hover {
     color: #819B40;
 }
+.rss-box .rss-title {display: none;}
 
 @media (max-width: 480px) {
     section.container .marker {
