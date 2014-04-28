@@ -8,8 +8,12 @@ html {
 }
 
 body {
-    max-width: 1140px;
+    width: 100%;
     margin: 0 auto;
+}
+
+body.homepage {
+    max-width: 1140px;
 }
 
 h2 {
@@ -100,6 +104,7 @@ ul {
     min-height: 100vh;
     margin-top: -177px;
     padding-top: 177px;
+    max-width: 1140px;
 }
 
 .content-wrapper .home header,
@@ -352,7 +357,8 @@ header.global > nav h1.logo img {
 header.global.slim > nav h2 {
     width: auto;
     padding: 0;
-    color: white;
+    color: black;
+    font-weight: bold;
     text-shadow: none;
     margin: 25px 10px 0 10px;
 }

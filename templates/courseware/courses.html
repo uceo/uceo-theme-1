@@ -30,14 +30,73 @@
   </header>
 
   <section class="container">
-    <section class="courses">
-      <ul class="courses-listing">
-        %for course in courses:
-        <li class="courses-listing-item">
-          <%include file="../course.html" args="course=course" />
-        </li>
-        %endfor
-      </ul>
+    <section class="marker">
+      JOIN UCEO FREE COURSES
     </section>
+    <section class="highlighted-courses">
+
+      % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
+        <section class="courses">
+            <ul class="courses-listing">
+            %for course in courses:
+              <li class="courses-listing-item">
+                <%include file="course.html" args="course=course" />
+              </li>
+            %endfor
+            </ul>
+        </section>
+      % endif
+
+    </section>
+
+    <section class="marker middle">
+      JOIN UCEO PAID COURSES
+    </section>
+    <section class="highlighted-courses">
+      <section class="courses">
+          <ul class="courses-listing">
+            <li class="courses-listing-item">
+              <article class="course">
+                <!-- span class="status">New</span-->
+                <a href="#">
+                <div class="inner-wrapper">
+                    <header class="course-preview">
+                      <hgroup>
+                        <h2>Pengantar Entrepreneur Kuliner</h2>
+                      </hgroup>
+                      <div class="info-link">&#x2794;</div>
+                    </header>
+                    <section class="info">
+                      <div class="cover-image">
+                        <img src="http://static.squarespace.com/static/51e3ae56e4b0ebae3ad28b2b/t/532ba9dee4b01c9accdb0ca6/1395370462705/?format=500w" alt="PEK" />
+                      </div>
+                      <div class="desc">
+                        <p>Semakin diminatinya wisata kuliner, memberikan peluang yang sangat besar dalam bisnis ini. Seakan tidak ada habisnya, selalu ada inovasi baru yang membuat bisnis kuliner semakin menjanjikan dan memiliki prospek yang sangat baik dengan didukung oleh potensi kekayaan alam negara kita.</p>
+                      </div>
+                      <div class="bottom">
+                        <span class="university">UCEO</span>
+                        <span class="start-date">January 01, 1970</span>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="meta-info">
+                    <p class="university">UCEO</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
+      </section>
+    </section>
+    <section class="marker middle">
+      BLOG AND NEWS
+    </section>
+    <div>
+      <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fciputra-uceo.net%2Fblog%3Fformat%3Drss&chan=linkno&num=5&desc=200&utf=y&html=p"  charset="UTF-8" type="text/javascript"></script>
+
+      <noscript>
+      <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fciputra-uceo.net%2Fblog%3Fformat%3Drss&chan=linkno&num=5&desc=200&utf=y&html=y">View RSS feed</a>
+      </noscript>
+    </div>
   </section>
 </section>
