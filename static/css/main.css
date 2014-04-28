@@ -10,10 +10,7 @@ html {
 body {
     width: 100%;
     margin: 0 auto;
-}
-
-body.homepage {
-    max-width: 1140px;
+    background-color: #ebebeb;
 }
 
 h2 {
@@ -32,9 +29,10 @@ ul {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    max-width: 1170px;
+    max-width: 1174px;
     padding-left: 1em;
     padding-right: 1em;
+    background-color: #ebebeb;
 }
 
 .squaredThree {
@@ -91,6 +89,10 @@ ul {
 /* ==========================================================================
    Content
    ========================================================================== */
+body.homepage .content-wrapper {
+    max-width: auto;
+    background: url('../images/furley-bg.png');
+}
 
 .content-wrapper,
 .view-register .content-wrapper,
@@ -100,7 +102,6 @@ ul {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    background-color: #ebebeb;
     min-height: 100vh;
     margin-top: -177px;
     padding-top: 177px;
@@ -208,18 +209,18 @@ section.container .marker {
     margin-left: -0.75em;
     text-align: center;
     padding: 1em 0;
-    -webkit-box-shadow: 0 6px 40px -20px;
-    -moz-box-shadow: 0 6px 40px -20px;
-    box-shadow: 0 6px 40px -20px;
+    -webkit-box-shadow: 0 6px 30px -20px;
+    -moz-box-shadow: 0 6px 30px -20px;
+    box-shadow: 0 6px 30px -20px;
     color: #565656;
     font-size: 1.3em;
     font-weight: bold;
     letter-spacing: 1px;
 }
 section.container .marker.middle {
-    -webkit-box-shadow: 0 0 40 -20px;
-    -moz-box-shadow: 0 0 40 -20px;
-    box-shadow: 0 0 40 -20px;
+    -webkit-box-shadow: 0 0 30px -20px;
+    -moz-box-shadow: 0 0 30px -20px;
+    box-shadow: 0 0 30px -20px;
 }
 
 
