@@ -1,6 +1,13 @@
 <%! from django.utils.translation import ugettext as _ %>
 
 <%! from django.core.urlresolvers import reverse %>
+<%! from django.utils import html %>
+<%! from django_countries.countries import COUNTRIES %>
+<%! from django.utils.translation import ugettext as _ %>
+<%! from student.models import UserProfile %>
+<%! from datetime import date %>
+<%! import calendar %>
+
 <%inherit file="main.html" />
 <%namespace name='static' file='static_content.html'/>
 
