@@ -165,11 +165,11 @@
     <section class="marker middle">
       BLOG AND NEWS
     </section>
-    <div>
-      <script language="JavaScript" src="https://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.ciputra-uceo.net%2Fblog%3Fformat%3Drss&chan=y&desc=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
+    <div class="news">
+      <script language="JavaScript" src="https://feed2js.org//feed2js.php?src=http%3A%2F%2Fciputra-uceo.net%2Fblog%3Fformat%3Drss&chan=linkno&num=5&desc=200&utf=y&html=p"  charset="UTF-8" type="text/javascript"></script>
 
       <noscript>
-      <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.ciputra-uceo.net%2Fblog%3Fformat%3Drss&chan=y&desc=1&utf=y&html=y">View RSS feed</a>
+      <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fciputra-uceo.net%2Fblog%3Fformat%3Drss&chan=linkno&num=5&desc=200&utf=y&html=p">View RSS feed</a>
       </noscript>
 
     </div>
@@ -195,6 +195,72 @@
          }
       })
    </script>
+   <script type="text/javascript" src="${static.url('themes/uceo-theme/js/form_validator.js')}"></script>
+  <script type="text/javascript">
+    $(function() {
+
+      // adding js class for styling with accessibility in mind
+      $('body').addClass('js');
+
+      // new window/tab opening
+      $('a[rel="external"], a[class="new-vp"]')
+      .click( function() {
+      window.open( $(this).attr('href') );
+      return false;
+      });
+
+      // form field label styling on focus
+      $("form :input").focus(function() {
+        $("label[for='" + this.id + "']").parent().addClass("is-focused");
+      }).blur(function() {
+        $("label").parent().removeClass("is-focused");
+      });
+
+    });
+
+    (function() {
+      toggleSubmitButton(true);
+
+      $('#register-form').on('submit', function() {
+        toggleSubmitButton(false);
+      });
+
+      $('#register-form').on('ajax:error', function() {
+        toggleSubmitButton(true);
+      });
+
+      $('#register-form').on('ajax:success', function(event, json, xhr) {
+        var url = json.redirect_url || "${reverse('dashboard')}";
+        location.href = url;
+      });
+
+      $('#register-form').on('ajax:error', function(event, jqXHR, textStatus) {
+        toggleSubmitButton(true);
+        json = $.parseJSON(jqXHR.responseText);
+        $('.status.message.submission-error').addClass('is-shown').focus();
+        $('.status.message.submission-error .message-copy').html(json.value).stop().css("display", "block");
+        $(".field-error").removeClass('field-error');
+        $("[data-field='"+json.field+"']").addClass('field-error')
+      });
+    })(this);
+
+    function toggleSubmitButton(enable) {
+      var $submitButton = $('form .form-actions #submit');
+
+      if(enable) {
+        $submitButton.
+          removeClass('is-disabled').
+          removeProp('disabled').
+          html("${_('Create My {platform_name} Account').format(platform_name=platform_name)}");
+      }
+      else {
+        $submitButton.
+          addClass('is-disabled').
+          prop('disabled', true).
+          text("${_(u'Processing your account information…')}");
+      }
+    }
+  </script>
 </%block>
 
 % if show_signup_immediately is not UNDEFINED:

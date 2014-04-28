@@ -227,6 +227,20 @@ section.container .marker.middle {
     -moz-box-shadow: 0 0 30px -20px;
     box-shadow: 0 0 30px -20px;
 }
+.news ul {
+    list-style: none;
+    margin: 1em 0;
+}
+.news li {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+.news li a {
+    font-weight: bold;
+}
+.news li a:hover {
+    color: #819B40;
+}
 
 @media (max-width: 480px) {
     section.container .marker {
