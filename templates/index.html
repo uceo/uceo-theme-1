@@ -142,7 +142,7 @@
 
 <!-- REGISTRATION FORM -->
 
-<section class="register container">
+<section class="register container" style="display:none">
   <section role="main" class="content">
     <form role="form" id="register-form" method="post" data-remote="true" action="/create_account" data-validator="true" novalidate>
       <input type="hidden" name="csrfmiddlewaretoken" value="${ csrf_token }">
@@ -266,6 +266,9 @@
   </section>
 
 </section>
+
+<!-- end of REGISTRATION FORM -->
+
 
 <section id="video-modal" class="modal home-page-video-modal video-modal">
   <div class="inner-wrapper">
