@@ -227,7 +227,7 @@ section.container .marker.middle {
     -moz-box-shadow: 0 0 30px -20px;
     box-shadow: 0 0 30px -20px;
 }
-.news ul {
+.news url {
     list-style: none;
     margin: 1em 0;
     padding: 0;
