@@ -32,7 +32,6 @@ ul {
     max-width: 1174px;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: #fff;
 }
 
 .squaredThree {
@@ -93,6 +92,7 @@ body.homepage .content-wrapper {
     max-width: inherit;
     background: url('../images/furley-bg.png');
 }
+body.homepage .container {background-color: #fff;}
 
 .view-register, .view-login, .view-passwordreset,
 .view-register .content-wrapper, .view-login .content-wrapper, .view-passwordreset .content-wrapper {
