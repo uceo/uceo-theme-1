@@ -1201,7 +1201,7 @@ nav.course-material ol.course-tabs li a.active {
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active,
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-none {
-    border-color: #819B40;
+    border-color: #ddd;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-some,
@@ -1238,7 +1238,7 @@ nav.course-material ol.course-tabs li a.active {
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active:after,
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-none:after {
-    color: #819B40;
+    color: #ddd;
 }
 
 .course-wrapper section.course-content .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol li a.active.progress-some:after,
